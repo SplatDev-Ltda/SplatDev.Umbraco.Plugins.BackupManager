@@ -18,12 +18,12 @@ Once the solution is created, you may open it with Visual Studio and start migra
 
 To make migration easier, migrate the plugin to the latest of each major version.
 
-ex. 
-v9.5.4
-v10.8.3
-v11.5.0
-v12.3.6
-v13.1.0
+ex.  
+- v9.5.4
+- v10.8.3
+- v11.5.0
+- v12.3.6
+- v13.1.0
 
 for questions, please contact Carlos Casalicchio
 
