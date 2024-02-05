@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <ContentTargetFolders>.</ContentTargetFolders>
+        <Product>SplatDev.Umbraco.Plugin.Backups</Product>
+        <PackageId>SplatDev.Umbraco.Plugin.Backups</PackageId>
+        <Title>SplatDev.Umbraco.Plugin.Backups</Title>
+        <Description>...</Description>
+        <Product>...</Product>
+        <PackageTags>umbraco plugin package</PackageTags>
+        <RootNamespace>SplatDev.Umbraco.Plugin.Backups</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Umbraco.Cms.Web.Website" Version="9.5.4" />
+        <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="9.5.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="App_Plugins\SplatDev.Umbraco.Plugin.Backups\**\*.*">
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+            <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+        </Content>
+        <None Include="build\**\*.*">
+            <Pack>true</Pack>
+            <PackagePath>buildTransitive</PackagePath>
+        </None>
+    </ItemGroup>
+</Project>

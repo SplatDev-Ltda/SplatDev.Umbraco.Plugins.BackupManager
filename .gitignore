@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/v9.5.4/src/.vs/SplatDev.Umbraco.Plugin.v9.5.4/FileContentIndex
+/v9.5.4/src/SplatDev.Umbraco.Plugin.Backups/build
+/v9.5.4/src/SplatDev.Umbraco.Plugin.Backups/obj
