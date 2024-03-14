@@ -4,6 +4,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="App_Plugins\Dashboards\SiteBackup\css\style.css" />
+    <Content Include="App_Plugins\Dashboards\SiteBackup\css\style.min.css" />
+    <Content Include="App_Plugins\Dashboards\SiteBackup\Lang\en-US.xml" />
+    <Content Include="App_Plugins\Dashboards\SiteBackup\views\dashboard.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Plugins\Dashboards\SiteBackup\css\style.scss" />
+    <None Include="App_Plugins\Dashboards\SiteBackup\js\controller.js" />
+    <None Include="App_Plugins\Dashboards\SiteBackup\js\filters.js" />
+    <None Include="App_Plugins\Dashboards\SiteBackup\package.manifest" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms" Version="12.3.7" />
