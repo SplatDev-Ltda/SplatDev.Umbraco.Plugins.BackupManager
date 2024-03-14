@@ -81,15 +81,28 @@
 
     function getBackupDetails() {
         $http.get(`${baseUrl}GetBackupDetails`).then(response => {
-            debugger
-            vm.model.details = response.data;
+            if (response?.data) {
+                vm.model.details = GetPropertVal(response?.data);
+            }
+            else {
+                vm.model.details = response?.data;
+            }
             vm.model.props = Object.keys(vm.model.details)
         })
     }
 
+    function GetPropertVal(responseData) {
+        const formattedData = {};
+        for (const key in responseData) {
+            formattedData[key.charAt(0).toUpperCase() + key.slice(1)] = responseData[key];
+        }
+        return formattedData;
+    }
+
+
+
     function getPerformed() {
         $http.get(`${baseUrl}GetBackupsPerformed`).then(response => {
-            debugger
             vm.model.performedDb = response.data.databaseBackups;
             vm.model.performedFiles = response.data.fileBackups;
             if (vm.model.performedDb != undefined && vm.model.performedDb != null) {

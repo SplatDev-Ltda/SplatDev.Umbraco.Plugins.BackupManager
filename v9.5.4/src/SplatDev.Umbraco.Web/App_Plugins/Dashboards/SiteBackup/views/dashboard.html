@@ -4,15 +4,15 @@
         <h2><localize key="@labels_title" /></h2>
         <p><localize key="@labels_description" /></p>
         <div class="editor-sitebackup__panel__buttons" ng-show="!vm.model.busy">
-            <button class="btn btn-primary" ng-click="vm.backupAll()" ng-show="vm.model.details.connectionString"><localize key="@buttons_all" /></button>
+            <button class="btn btn-primary" ng-click="vm.backupAll()" ng-show="vm.model.details.ConnectionString"><localize key="@buttons_all" /></button>
             <button class="btn btn-secondary" ng-click="vm.backupFiles()"><localize key="@buttons_files" /></button>
-            <button class="btn btn-secondary" ng-click="vm.backupDb()" ng-show="vm.model.details.connectionString"><localize key="@buttons_db" /></button>
+            <button class="btn btn-secondary" ng-click="vm.backupDb()" ng-show="vm.model.details.ConnectionString"><localize key="@buttons_db" /></button>
         </div>
         <div class="editor-sitebackup__panel__content">
             <fieldset>
                 <legend><localize key="@labels_performed" /></legend>
-                <div class="alert alert-info" ng-if="!vm.model.details.connectionString"><i class="icon-alert"></i>&nbsp;<localize key="@labels_nosqlserver" /></div>
-                <ul class="list-group" ng-if="vm.model.details.connectionString">
+                <div class="alert alert-info" ng-if="!vm.model.details.ConnectionString"><i class="icon-alert"></i>&nbsp;<localize key="@labels_nosqlserver" /></div>
+                <ul class="list-group" ng-if="vm.model.details.ConnectionString">
                     <li class="list-group-item"><strong><localize key="@labels_Database" /></strong><strong><localize key="@labels_created" /></strong></li>
                     <li class="list-group-item" ng-if="vm.model.dbKeys.length===0"><localize key="@labels_nobackup" /></li>
                     <li class="list-group-item" ng-if="vm.model.dbKeys.length>0" ng-repeat="key in vm.model.dbKeys">
