@@ -16,7 +16,7 @@
                     <li class="list-group-item"><strong><localize key="@labels_Database" /></strong><strong><localize key="@labels_created" /></strong></li>
                     <li class="list-group-item" ng-if="vm.model.dbKeys.length===0"><localize key="@labels_nobackup" /></li>
                     <li class="list-group-item" ng-if="vm.model.dbKeys.length>0" ng-repeat="key in vm.model.dbKeys">
-                        <span><a ng-href="{{(vm.getBackupFilename(key, vm.model.performedDb)).fullname}}" download>{{key}}</a><i class="icon-delete" localize="title" title="@labels_delete" ng-click="vm.deleteBackup(key)"></i></span> <span>{{(vm.getBackupFilename(key, vm.model.performedDb)).createDate | formatDate }}</span>
+                        <span><a ng-href="{{(vm.getBackupFilename(key, vm.model.performedDb)).fullname}}" download>{{key}}</a><i class="icon-delete" localize="title" title="@labels_delete" ng-click="vm.deleteBackup(key)"></i></span> <span>{{(vm.getBackupFilename(key, vm.model.performedDb)).createDate | date:'M/d/yyyy HH:mm:ss' }}</span>
                     </li>
                 </ul>
                 <div class="spacer"></div>
@@ -24,7 +24,7 @@
                     <li class="list-group-item"><strong><localize key="@labels_files" /></strong><strong><localize key="@labels_created" /></strong></li>
                     <li class="list-group-item" ng-if="vm.model.filesKeys.length===0"><localize key="@labels_nobackup" /></li>
                     <li class="list-group-item" ng-if="vm.model.filesKeys.length>0" ng-repeat="key in vm.model.filesKeys">
-                        <span><a ng-href="{{(vm.getBackupFilename(key, vm.model.performedFiles)).fullname}}" download>{{key}}</a><i class="icon-delete" localize="title" title="@labels_delete" ng-click="vm.deleteBackup(key)"></i></span> <span>{{(vm.getBackupFilename(key, vm.model.performedFiles)).createDate | formatDate }}</span>
+                        <span><a ng-href="{{(vm.getBackupFilename(key, vm.model.performedFiles)).fullname}}" download>{{key}}</a><i class="icon-delete" localize="title" title="@labels_delete" ng-click="vm.deleteBackup(key)"></i></span> <span>{{(vm.getBackupFilename(key, vm.model.performedFiles)).createDate |  date:'M/d/yyyy HH:mm:ss' }}</span>
                     </li>
                 </ul>
             </fieldset>
