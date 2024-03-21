@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SplatDev.Umbraco.Plugin.Backups</id>
+    <version>13.2.0.8</version>
+    <title>Umbraco Backups</title>
+    <authors>SplatDev</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>\App_Plugins\Dashboards\SiteBackup\icon.png</icon>
+    <readme>\App_Plugins\Dashboards\SiteBackup\README.md</readme>
+    <projectUrl>https://our.umbraco.com/packages/backoffice-extensions/simple-backups/</projectUrl>
+    <description>Backup plugin for Umbraco 13.2.0. Allows backing up files and database directly from the backoffice, when you don't have access to the server.</description>
+    <copyright>Copyright ©2024 SplatDev</copyright>
+    <tags>umbraco backups</tags>
+    <repository type="git" commit="131fbc0a4e83a4c1b22e29e4dc785cdfccc4f14f" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="System.Data.SqlClient" version="4.8.6" exclude="Build,Analyzers" />
+        <dependency id="Umbraco.Cms.Web.BackOffice" version="13.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Source\Repos\Umbraco-Backup-Manager-Shuchita\v13.2.0\src\SplatDev.Umbraco.Web\SplatDev.Umbraco.Plugin.Backups\bin\Release\net8.0\SplatDev.Umbraco.Plugin.Backups.dll" target="lib\net8.0\SplatDev.Umbraco.Plugin.Backups.dll" />
+    <file src="D:\Source\Repos\Umbraco-Backup-Manager-Shuchita\v13.2.0\src\SplatDev.Umbraco.Web\SplatDev.Umbraco.Plugin.Backups\App_Plugins\Dashboards\SiteBackup\css\style.css" target=".\App_Plugins\Dashboards\SiteBackup\css\style.css" />
+    <file src="D:\Source\Repos\Umbraco-Backup-Manager-Shuchita\v13.2.0\src\SplatDev.Umbraco.Web\SplatDev.Umbraco.Plugin.Backups\App_Plugins\Dashboards\SiteBackup\css\style.min.css" target=".\App_Plugins\Dashboards\SiteBackup\css\style.min.css" />
+    <file src="D:\Source\Repos\Umbraco-Backup-Manager-Shuchita\v13.2.0\src\SplatDev.Umbraco.Web\SplatDev.Umbraco.Plugin.Backups\App_Plugins\Dashboards\SiteBackup\css\style.scss" target=".\App_Plugins\Dashboards\SiteBackup\css\style.scss" />
+    <file src="D:\Source\Repos\Umbraco-Backup-Manager-Shuchita\v13.2.0\src\SplatDev.Umbraco.Web\SplatDev.Umbraco.Plugin.Backups\App_Plugins\Dashboards\SiteBackup\icon.png" target=".\App_Plugins\Dashboards\SiteBackup\icon.png" />
+    <file src="D:\Source\Repos\Umbraco-Backup-Manager-Shuchita\v13.2.0\src\SplatDev.Umbraco.Web\SplatDev.Umbraco.Plugin.Backups\App_Plugins\Dashboards\SiteBackup\js\controller.js" target=".\App_Plugins\Dashboards\SiteBackup\js\controller.js" />
+    <file src="D:\Source\Repos\Umbraco-Backup-Manager-Shuchita\v13.2.0\src\SplatDev.Umbraco.Web\SplatDev.Umbraco.Plugin.Backups\App_Plugins\Dashboards\SiteBackup\js\filters.js" target=".\App_Plugins\Dashboards\SiteBackup\js\filters.js" />
+    <file src="D:\Source\Repos\Umbraco-Backup-Manager-Shuchita\v13.2.0\src\SplatDev.Umbraco.Web\SplatDev.Umbraco.Plugin.Backups\App_Plugins\Dashboards\SiteBackup\lang\en-US.xml" target=".\App_Plugins\Dashboards\SiteBackup\lang\en-US.xml" />
+    <file src="D:\Source\Repos\Umbraco-Backup-Manager-Shuchita\v13.2.0\src\SplatDev.Umbraco.Web\SplatDev.Umbraco.Plugin.Backups\App_Plugins\Dashboards\SiteBackup\package.manifest" target=".\App_Plugins\Dashboards\SiteBackup\package.manifest" />
+    <file src="D:\Source\Repos\Umbraco-Backup-Manager-Shuchita\v13.2.0\src\SplatDev.Umbraco.Web\SplatDev.Umbraco.Plugin.Backups\App_Plugins\Dashboards\SiteBackup\README.md" target=".\App_Plugins\Dashboards\SiteBackup\README.md" />
+    <file src="D:\Source\Repos\Umbraco-Backup-Manager-Shuchita\v13.2.0\src\SplatDev.Umbraco.Web\SplatDev.Umbraco.Plugin.Backups\App_Plugins\Dashboards\SiteBackup\readme.txt" target=".\App_Plugins\Dashboards\SiteBackup\readme.txt" />
+    <file src="D:\Source\Repos\Umbraco-Backup-Manager-Shuchita\v13.2.0\src\SplatDev.Umbraco.Web\SplatDev.Umbraco.Plugin.Backups\App_Plugins\Dashboards\SiteBackup\views\dashboard.html" target=".\App_Plugins\Dashboards\SiteBackup\views\dashboard.html" />
+    <file src="D:\Source\Repos\Umbraco-Backup-Manager-Shuchita\v13.2.0\src\SplatDev.Umbraco.Web\SplatDev.Umbraco.Plugin.Backups\buildTransitive\SplatDev.Umbraco.Plugin.Backups.targets" target="buildTransitive\SplatDev.Umbraco.Plugin.Backups.targets" />
+  </files>
+</package>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplatDev.Umbraco.Web", "SplatDev.Umbraco.Web\SplatDev.Umbraco.Web.csproj", "{C18E239A-0B84-4078-8EF3-31EE0CDB09A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplatDev.Umbraco.Plugin.Backups", "SplatDev.Umbraco.Plugin.Backups\SplatDev.Umbraco.Plugin.Backups.csproj", "{6703A74A-D3B3-4A8B-9770-1B2871C21F94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C18E239A-0B84-4078-8EF3-31EE0CDB09A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C18E239A-0B84-4078-8EF3-31EE0CDB09A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C18E239A-0B84-4078-8EF3-31EE0CDB09A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C18E239A-0B84-4078-8EF3-31EE0CDB09A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6703A74A-D3B3-4A8B-9770-1B2871C21F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6703A74A-D3B3-4A8B-9770-1B2871C21F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6703A74A-D3B3-4A8B-9770-1B2871C21F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6703A74A-D3B3-4A8B-9770-1B2871C21F94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

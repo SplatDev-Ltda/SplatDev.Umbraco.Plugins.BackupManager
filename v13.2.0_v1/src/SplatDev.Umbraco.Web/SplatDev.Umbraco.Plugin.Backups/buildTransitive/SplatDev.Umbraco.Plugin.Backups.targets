@@ -1,0 +1,21 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SplatDevUmbracoPluginBackupsContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\Dashboards\**\*.*</SplatDevUmbracoPluginBackupsContentFilesPath>
+  </PropertyGroup>
+
+  <Target Name="CopySplatDevUmbracoPluginBackupsAssets" BeforeTargets="BeforeBuild">
+    <ItemGroup>
+      <SplatDevUmbracoPluginBackupsContentFiles Include="$(SplatDevUmbracoPluginBackupsContentFilesPath)" />
+    </ItemGroup>
+    <Message Text="Copying Dashboards files: $(SplatDevUmbracoPluginBackupsContentFilesPath) - #@(SplatDevUmbracoPluginBackupsContentFiles->Count()) files" Importance="high" />
+    <Copy SourceFiles="@(SplatDevUmbracoPluginBackupsContentFiles)" DestinationFiles="@(SplatDevUmbracoPluginBackupsContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\Dashboards\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="ClearSplatDevUmbracoPluginBackupsAssets" BeforeTargets="Clean">
+    <ItemGroup>
+      <SplatDevUmbracoPluginBackupsDir Include="$(MSBuildProjectDirectory)\App_Plugins\Dashboards\" />
+    </ItemGroup>
+    <Message Text="Clear old Dashboards data" Importance="high" />
+    <RemoveDir Directories="@(SplatDevUmbracoPluginBackupsDir)" />
+  </Target>
+</Project>
