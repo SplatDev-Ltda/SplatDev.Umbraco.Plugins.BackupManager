@@ -1,0 +1,21 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SplatDevUmbracoPluginBackupsContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\SplatDev.Umbraco.Plugin.Backups\**\*.*</SplatDevUmbracoPluginBackupsContentFilesPath>
+  </PropertyGroup>
+
+  <Target Name="CopySplatDevUmbracoPluginBackupsAssets" BeforeTargets="Build">
+    <ItemGroup>
+      <SplatDevUmbracoPluginBackupsContentFiles Include="$(SplatDevUmbracoPluginBackupsContentFilesPath)" />
+    </ItemGroup>
+    <Message Text="Copying SplatDev.Umbraco.Plugin.Backups files: $(SplatDevUmbracoPluginBackupsContentFilesPath) - #@(SplatDevUmbracoPluginBackupsContentFiles->Count()) files" Importance="high" />
+    <Copy SourceFiles="@(SplatDevUmbracoPluginBackupsContentFiles)" DestinationFiles="@(SplatDevUmbracoPluginBackupsContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\SplatDev.Umbraco.Plugin.Backups\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="ClearSplatDevUmbracoPluginBackupsAssets" BeforeTargets="Clean">
+    <ItemGroup>
+      <SplatDevUmbracoPluginBackupsDir Include="$(MSBuildProjectDirectory)\App_Plugins\SplatDev.Umbraco.Plugin.Backups\" />
+    </ItemGroup>
+    <Message Text="Clear old SplatDev.Umbraco.Plugin.Backups data" Importance="high" />
+    <RemoveDir Directories="@(SplatDevUmbracoPluginBackupsDir)" />
+  </Target>
+</Project>

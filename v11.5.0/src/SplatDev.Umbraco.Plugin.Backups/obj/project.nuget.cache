@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nDL0DHuR4ERar6lB8jHPKI6pav4F1cW5Rv9ZRAq4xLBs7gPkpxjVlFUX1iYrLy51Ydqi9flhZW72T1TQMYRr2w==",
+  "dgSpecHash": "jhnq9rF9DXB8+HKt2ciJC8pMTjB1odsjEKPZSUXchMJiDBBZ0pFXLsKO8habCpOWow1Qsbca2Otgkahlv7FfLw==",
   "success": true,
-  "projectFilePath": "D:\\Officials\\BackUpManager\\v11.5.0\\src\\SplatDev.Umbraco.Plugin.Backups\\SplatDev.Umbraco.Plugin.Backups.csproj",
+  "projectFilePath": "D:\\BackupManger_22\\BackupManafer_22Mar\\v11.5.0\\src\\SplatDev.Umbraco.Plugin.Backups\\SplatDev.Umbraco.Plugin.Backups.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\dazinator.extensions.fileproviders\\2.0.0\\dazinator.extensions.fileproviders.2.0.0.nupkg.sha512",
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\dotnet.glob\\3.1.0\\dotnet.glob.3.1.0.nupkg.sha512",
@@ -216,6 +216,7 @@
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.publishedcache.nucache\\11.5.0\\umbraco.cms.publishedcache.nucache.11.5.0.nupkg.sha512",
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.web.backoffice\\11.5.0\\umbraco.cms.web.backoffice.11.5.0.nupkg.sha512",
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.web.common\\11.5.0\\umbraco.cms.web.common.11.5.0.nupkg.sha512",
+    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.web.website\\11.5.0\\umbraco.cms.web.website.11.5.0.nupkg.sha512",
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.csharptest.net.collections\\14.906.1403.1085\\umbraco.csharptest.net.collections.14.906.1403.1085.nupkg.sha512"
   ],
   "logs": []
