@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sA5l84hUyPTGCm4AaCSZD4md0vqbtpRtHEVYGht/POMbh6vhw/NforVUBKgqDzcr3Uzdxdg5rp7gwvfdVCuLGQ==",
+  "dgSpecHash": "LqLof0r8IzS3G1sVhxBz3at1NbekQF3FT1jSxBrNuqRrQv+LA3v7fgRXR9ow3FrbjD3cb7KLDwjmQ1sp8d+9IQ==",
   "success": true,
-  "projectFilePath": "D:\\Officials\\BackUpManager\\v10.8.3\\src\\SplatDev.Umbraco.Plugin.Backups\\SplatDev.Umbraco.Plugin.Backups.csproj",
+  "projectFilePath": "D:\\BackupManger_22\\BackupManafer_22Mar\\v10.8.3\\src\\SplatDev.Umbraco.Plugin.Backups\\SplatDev.Umbraco.Plugin.Backups.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",
@@ -135,7 +135,7 @@
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\serilog.sinks.debug\\2.0.0\\serilog.sinks.debug.2.0.0.nupkg.sha512",
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\serilog.sinks.map\\1.0.2\\serilog.sinks.map.1.0.2.nupkg.sha512",
-    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\sixlabors.imagesharp\\2.1.6\\sixlabors.imagesharp.2.1.6.nupkg.sha512",
+    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\sixlabors.imagesharp\\2.1.7\\sixlabors.imagesharp.2.1.7.nupkg.sha512",
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\sixlabors.imagesharp.web\\2.0.2\\sixlabors.imagesharp.web.2.0.2.nupkg.sha512",
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\smidge\\4.2.1\\smidge.4.2.1.nupkg.sha512",
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\smidge.core\\4.3.0\\smidge.core.4.3.0.nupkg.sha512",
@@ -228,11 +228,13 @@
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.core\\10.8.4\\umbraco.cms.core.10.8.4.nupkg.sha512",
-    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.examine.lucene\\10.8.4\\umbraco.cms.examine.lucene.10.8.4.nupkg.sha512",
-    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.infrastructure\\10.8.4\\umbraco.cms.infrastructure.10.8.4.nupkg.sha512",
-    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.publishedcache.nucache\\10.8.4\\umbraco.cms.publishedcache.nucache.10.8.4.nupkg.sha512",
-    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.web.common\\10.8.4\\umbraco.cms.web.common.10.8.4.nupkg.sha512",
+    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.core\\10.8.5\\umbraco.cms.core.10.8.5.nupkg.sha512",
+    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.examine.lucene\\10.8.5\\umbraco.cms.examine.lucene.10.8.5.nupkg.sha512",
+    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.infrastructure\\10.8.5\\umbraco.cms.infrastructure.10.8.5.nupkg.sha512",
+    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.publishedcache.nucache\\10.8.5\\umbraco.cms.publishedcache.nucache.10.8.5.nupkg.sha512",
+    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.web.backoffice\\10.8.5\\umbraco.cms.web.backoffice.10.8.5.nupkg.sha512",
+    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.web.common\\10.8.5\\umbraco.cms.web.common.10.8.5.nupkg.sha512",
+    "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.cms.web.website\\10.8.5\\umbraco.cms.web.website.10.8.5.nupkg.sha512",
     "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\umbraco.csharptest.net.collections\\14.906.1403.1085\\umbraco.csharptest.net.collections.14.906.1403.1085.nupkg.sha512"
   ],
   "logs": []
