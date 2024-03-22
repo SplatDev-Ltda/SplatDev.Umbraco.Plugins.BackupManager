@@ -11,10 +11,13 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("SplatDev.Umbraco.Plugin.Backups")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("SplatDev Ltda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright ©2024 SplatDev")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Backup plugin for Umbraco 12.3.9. Allows backing up files and database directly f" +
+    "rom the backoffice, when you don\'t have access to the server.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed50fe40e3c5cdd197730fc8bde72afafaaaa894")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef7737ed70d6d6f285bf0ddd85365f869a2d70f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("SplatDev.Umbraco.Plugin.Backups")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SplatDev.Umbraco.Plugin.Backups")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

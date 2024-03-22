@@ -5,21 +5,21 @@
     <link>https://splatdev.com</link>
   </creator>
   <area alias="dashboardTabs">
-    <key alias="splatDev.SiteBackup">Site Backup</key>
+    <key alias="SplatDev.Umbraco.Plugin.Backups">Backups</key>
   </area>
-  <area alias="labels">
+  <area alias="ui">
     <key alias="title">Files and Database Backup</key>
     <key alias="description">Create backups directly from the BackOffice, each backup is time-stamped and there are no restrictions on how many can be done. Make sure to watch your storage space! Click on a file to download the archive.</key>
     <key alias="nosqlserver">Your database is not in a server, it will be backed up along with the files.</key>
     <key alias="details">Server Details</key>
-    <key alias="ConnectionString">Connection String</key>
-    <key alias="Server">Database Server</key>
-    <key alias="Database">Database</key>
+    <key alias="connectionString">Connection String</key>
+    <key alias="server">Database Server</key>
+    <key alias="database">Database</key>
     <key alias="files">Files</key>
-    <key alias="DestinationPath">Backup Folder</key>
-    <key alias="RootPath">Site Root</key>
-    <key alias="DatabasePath">Database backup path</key>
-    <key alias="FilesPath">Files backup path</key>
+    <key alias="destinationPath">Backup Folder</key>
+    <key alias="rootPath">Site Root</key>
+    <key alias="databasePath">Database backup path</key>
+    <key alias="filesPath">Files backup path</key>
     <key alias="performed">Backups Completed</key>
     <key alias="created">Create Date</key>
     <key alias="nobackup">No backups yet</key>

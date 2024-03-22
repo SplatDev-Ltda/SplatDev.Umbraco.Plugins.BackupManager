@@ -81,7 +81,6 @@
 
     function getBackupDetails() {
         $http.get(`${baseUrl}GetBackupDetails`).then(response => {
-            debugger
             vm.model.details = response.data;
             vm.model.props = Object.keys(vm.model.details)
         })
@@ -89,7 +88,6 @@
 
     function getPerformed() {
         $http.get(`${baseUrl}GetBackupsPerformed`).then(response => {
-            debugger
             vm.model.performedDb = response.data.databaseBackups;
             vm.model.performedFiles = response.data.fileBackups;
             if (vm.model.performedDb != undefined && vm.model.performedDb != null) {
