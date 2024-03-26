@@ -1,6 +1,6 @@
 ﻿Simple Backups
 
-for Umbraco v8.18.7
+for Umbraco v9.5.4
 
 Install via nuget
 
@@ -15,5 +15,5 @@ Specs
 - Type: Dashboard
 - Value Type: NONE
 - Dependencies:
-  - System.IO.Compression
-  - System.IO.Compression.FileSystem
+  - Umbraco.Cms.Web.Website
+  - Umbraco.Cms.Web.BackOffice
