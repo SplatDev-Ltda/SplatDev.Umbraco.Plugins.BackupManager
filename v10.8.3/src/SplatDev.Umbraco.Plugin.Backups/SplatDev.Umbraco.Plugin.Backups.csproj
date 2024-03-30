@@ -1,15 +1,39 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <ContentTargetFolders>.</ContentTargetFolders>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Product>SplatDev.Umbraco.Plugin.Backups</Product>
+    <PackageId>SplatDev.Umbraco.Plugin.Backups</PackageId>
+    <Title>Umbraco Backups</Title>
+    <Description>Backup plugin for Umbraco 10.8.5. Allows backing up files and database directly from the backoffice, when you don't have access to the server.</Description>
+    <PackageVersion>10.8.5</PackageVersion>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>SplatDev</Authors>
+    <Company>SplatDev Ltda</Company>
+    <PackageIcon>\App_Plugins\SplatDev.Umbraco.Plugin.Backups\icon.png</PackageIcon>
+    <PackageReadmeFile>\App_Plugins\SplatDev.Umbraco.Plugin.Backups\README.md</PackageReadmeFile>
+    <PackRelease>true</PackRelease>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://our.umbraco.com/packages/backoffice-extensions/simple-backups/</PackageProjectUrl>
+    <ReleaseNotes>Created base package for v10.8.5</ReleaseNotes>
+    <Copyright>Copyright ©2024 SplatDev</Copyright>
+    <PackageTags>umbraco backups</PackageTags>
+    <RootNamespace>SplatDev.Umbraco.Plugin.Backups</RootNamespace>
+
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
-    <PackageReference Include="Umbraco.Cms.Core" Version="10.8.4" />
-    <PackageReference Include="Umbraco.Cms.Web.Common" Version="10.8.4" />
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="10.8.5" />
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.8.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="App_Plugins\SplatDev.Umbraco.Plugin.Backups\**" ExcludeFromSingleFile="true" CopyToPublishDirectory="Always" />
+    <None Include="buildTransitive\**" Pack="true" PackagePath="buildTransitive" />
+  </ItemGroup>
 </Project>

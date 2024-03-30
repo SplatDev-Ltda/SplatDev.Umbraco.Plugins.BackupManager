@@ -2,9 +2,12 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using System;
 using System.Data.SqlClient;
+using System.IO;
 using System.IO.Compression;
 using System.Net;
+using System.Threading.Tasks;
 using Umbraco.Cms.Web.Common.Authorization;
 using Umbraco.Cms.Web.Common.Controllers;
 using Umbraco.Plugins.Backups.Models;

@@ -35,8 +35,8 @@
       "SplatDev.Umbraco.Plugin.Backups/1.0.0": {
         "dependencies": {
           "System.Data.SqlClient": "4.8.6",
-          "Umbraco.Cms.Core": "10.8.4",
-          "Umbraco.Cms.Web.Common": "10.8.4",
+          "Umbraco.Cms.Web.BackOffice": "10.8.5",
+          "Umbraco.Cms.Web.Website": "10.8.5",
           "Microsoft.AspNetCore.Antiforgery": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "6.0.0.0",
@@ -53,6 +53,8 @@
           "Microsoft.AspNetCore.Connections.Abstractions": "6.0.0.0",
           "Microsoft.AspNetCore.CookiePolicy": "6.0.0.0",
           "Microsoft.AspNetCore.Cors": "6.0.0.0",
+          "Microsoft.AspNetCore.Cryptography.Internal.Reference": "6.0.0.0",
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation.Reference": "6.0.0.0",
           "Microsoft.AspNetCore.DataProtection.Abstractions.Reference": "6.0.0.0",
           "Microsoft.AspNetCore.DataProtection.Reference": "6.0.0.0",
           "Microsoft.AspNetCore.DataProtection.Extensions": "6.0.0.0",
@@ -136,11 +138,14 @@
           "Microsoft.Extensions.Features": "6.0.0.0",
           "Microsoft.Extensions.FileProviders.Abstractions.Reference": "6.0.0.0",
           "Microsoft.Extensions.FileProviders.Composite.Reference": "6.0.0.0",
+          "Microsoft.Extensions.FileProviders.Embedded.Reference": "6.0.0.0",
           "Microsoft.Extensions.FileProviders.Physical.Reference": "6.0.0.0",
           "Microsoft.Extensions.FileSystemGlobbing.Reference": "6.0.0.0",
           "Microsoft.Extensions.Hosting.Abstractions.Reference": "6.0.0.0",
           "Microsoft.Extensions.Hosting": "6.0.0.0",
           "Microsoft.Extensions.Http.Reference": "6.0.0.0",
+          "Microsoft.Extensions.Identity.Core.Reference": "6.0.0.0",
+          "Microsoft.Extensions.Identity.Stores.Reference": "6.0.0.0",
           "Microsoft.Extensions.Localization.Abstractions": "6.0.0.0",
           "Microsoft.Extensions.Localization": "6.0.0.0",
           "Microsoft.Extensions.Logging.Abstractions.Reference": "6.0.0.0",
@@ -688,9 +693,6 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.2423.51812"
           }
-        },
-        "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {}
         }
       },
       "Microsoft.AspNetCore.Cryptography.KeyDerivation/6.0.24": {
@@ -702,9 +704,6 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.2423.51812"
           }
-        },
-        "compile": {
-          "lib/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {}
         }
       },
       "Microsoft.AspNetCore.DataProtection/5.0.5": {
@@ -1123,9 +1122,6 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.2423.51812"
           }
-        },
-        "compile": {
-          "lib/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll": {}
         }
       },
       "Microsoft.Extensions.FileProviders.Physical/6.0.0": {
@@ -1162,9 +1158,6 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.2423.51812"
           }
-        },
-        "compile": {
-          "lib/net6.0/Microsoft.Extensions.Identity.Core.dll": {}
         }
       },
       "Microsoft.Extensions.Identity.Stores/6.0.24": {
@@ -1178,9 +1171,6 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.2423.51812"
           }
-        },
-        "compile": {
-          "lib/net6.0/Microsoft.Extensions.Identity.Stores.dll": {}
         }
       },
       "Microsoft.Extensions.Logging/6.0.0": {
@@ -1895,7 +1885,7 @@
           "lib/net5.0/Serilog.Sinks.Map.dll": {}
         }
       },
-      "SixLabors.ImageSharp/2.1.6": {
+      "SixLabors.ImageSharp/2.1.7": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "System.Text.Encoding.CodePages": "5.0.0"
@@ -1903,7 +1893,7 @@
         "runtime": {
           "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.1.6.0"
+            "fileVersion": "2.1.7.0"
           }
         },
         "compile": {
@@ -1913,7 +1903,7 @@
       "SixLabors.ImageSharp.Web/2.0.2": {
         "dependencies": {
           "Microsoft.IO.RecyclableMemoryStream": "2.2.0",
-          "SixLabors.ImageSharp": "2.1.6"
+          "SixLabors.ImageSharp": "2.1.7"
         },
         "runtime": {
           "lib/netcoreapp3.1/SixLabors.ImageSharp.Web.dll": {
@@ -2847,7 +2837,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "Umbraco.Cms.Core/10.8.4": {
+      "Umbraco.Cms.Core/10.8.5": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.FileProviders.Embedded": "6.0.24",
@@ -2867,31 +2857,31 @@
         },
         "runtime": {
           "lib/net6.0/Umbraco.Core.dll": {
-            "assemblyVersion": "10.8.4.0",
-            "fileVersion": "10.8.4.7"
+            "assemblyVersion": "10.8.5.0",
+            "fileVersion": "10.8.5.4"
           }
         },
         "compile": {
           "lib/net6.0/Umbraco.Core.dll": {}
         }
       },
-      "Umbraco.Cms.Examine.Lucene/10.8.4": {
+      "Umbraco.Cms.Examine.Lucene/10.8.5": {
         "dependencies": {
           "Examine": "3.0.1",
-          "Umbraco.Cms.Core": "10.8.4",
-          "Umbraco.Cms.Infrastructure": "10.8.4"
+          "Umbraco.Cms.Core": "10.8.5",
+          "Umbraco.Cms.Infrastructure": "10.8.5"
         },
         "runtime": {
           "lib/net6.0/Umbraco.Examine.Lucene.dll": {
-            "assemblyVersion": "10.8.4.0",
-            "fileVersion": "10.8.4.7"
+            "assemblyVersion": "10.8.5.0",
+            "fileVersion": "10.8.5.4"
           }
         },
         "compile": {
           "lib/net6.0/Umbraco.Examine.Lucene.dll": {}
         }
       },
-      "Umbraco.Cms.Infrastructure/10.8.4": {
+      "Umbraco.Cms.Infrastructure/10.8.5": {
         "dependencies": {
           "Examine.Core": "3.0.1",
           "HtmlAgilityPack": "1.11.54",
@@ -2918,43 +2908,62 @@
           "Serilog.Sinks.Async": "1.5.0",
           "Serilog.Sinks.File": "5.0.0",
           "Serilog.Sinks.Map": "1.0.2",
-          "SixLabors.ImageSharp": "2.1.6",
+          "SixLabors.ImageSharp": "2.1.7",
           "System.IO.FileSystem.AccessControl": "5.0.0",
           "System.Security.Cryptography.Pkcs": "6.0.4",
           "System.Threading.Tasks.Dataflow": "6.0.0",
-          "Umbraco.Cms.Core": "10.8.4",
+          "Umbraco.Cms.Core": "10.8.5",
           "NCrontab": "3.3.3"
         },
         "runtime": {
           "lib/net6.0/Umbraco.Infrastructure.dll": {
-            "assemblyVersion": "10.8.4.0",
-            "fileVersion": "10.8.4.7"
+            "assemblyVersion": "10.8.5.0",
+            "fileVersion": "10.8.5.4"
           }
         },
         "compile": {
           "lib/net6.0/Umbraco.Infrastructure.dll": {}
         }
       },
-      "Umbraco.Cms.PublishedCache.NuCache/10.8.4": {
+      "Umbraco.Cms.PublishedCache.NuCache/10.8.5": {
         "dependencies": {
           "K4os.Compression.LZ4": "1.3.6",
           "MessagePack": "2.5.129",
           "Newtonsoft.Json": "13.0.3",
           "Umbraco.CSharpTest.Net.Collections": "14.906.1403.1085",
-          "Umbraco.Cms.Core": "10.8.4",
-          "Umbraco.Cms.Infrastructure": "10.8.4"
+          "Umbraco.Cms.Core": "10.8.5",
+          "Umbraco.Cms.Infrastructure": "10.8.5"
         },
         "runtime": {
           "lib/net6.0/Umbraco.PublishedCache.NuCache.dll": {
-            "assemblyVersion": "10.8.4.0",
-            "fileVersion": "10.8.4.7"
+            "assemblyVersion": "10.8.5.0",
+            "fileVersion": "10.8.5.4"
           }
         },
         "compile": {
           "lib/net6.0/Umbraco.PublishedCache.NuCache.dll": {}
         }
       },
-      "Umbraco.Cms.Web.Common/10.8.4": {
+      "Umbraco.Cms.Web.BackOffice/10.8.5": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Serilog.AspNetCore": "5.0.0",
+          "Umbraco.Cms.Core": "10.8.5",
+          "Umbraco.Cms.Examine.Lucene": "10.8.5",
+          "Umbraco.Cms.Infrastructure": "10.8.5",
+          "Umbraco.Cms.Web.Common": "10.8.5"
+        },
+        "runtime": {
+          "lib/net6.0/Umbraco.Web.BackOffice.dll": {
+            "assemblyVersion": "10.8.5.0",
+            "fileVersion": "10.8.5.4"
+          }
+        },
+        "compile": {
+          "lib/net6.0/Umbraco.Web.BackOffice.dll": {}
+        }
+      },
+      "Umbraco.Cms.Web.Common/10.8.5": {
         "dependencies": {
           "Dazinator.Extensions.FileProviders": "2.0.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.24",
@@ -2964,19 +2973,35 @@
           "SixLabors.ImageSharp.Web": "2.0.2",
           "Smidge.InMemory": "4.3.0",
           "Smidge.Nuglify": "4.2.1",
-          "Umbraco.Cms.Core": "10.8.4",
-          "Umbraco.Cms.Examine.Lucene": "10.8.4",
-          "Umbraco.Cms.Infrastructure": "10.8.4",
-          "Umbraco.Cms.PublishedCache.NuCache": "10.8.4"
+          "Umbraco.Cms.Core": "10.8.5",
+          "Umbraco.Cms.Examine.Lucene": "10.8.5",
+          "Umbraco.Cms.Infrastructure": "10.8.5",
+          "Umbraco.Cms.PublishedCache.NuCache": "10.8.5"
         },
         "runtime": {
           "lib/net6.0/Umbraco.Web.Common.dll": {
-            "assemblyVersion": "10.8.4.0",
-            "fileVersion": "10.8.4.7"
+            "assemblyVersion": "10.8.5.0",
+            "fileVersion": "10.8.5.4"
           }
         },
         "compile": {
           "lib/net6.0/Umbraco.Web.Common.dll": {}
+        }
+      },
+      "Umbraco.Cms.Web.Website/10.8.5": {
+        "dependencies": {
+          "Umbraco.Cms.Core": "10.8.5",
+          "Umbraco.Cms.Infrastructure": "10.8.5",
+          "Umbraco.Cms.Web.Common": "10.8.5"
+        },
+        "runtime": {
+          "lib/net6.0/Umbraco.Web.Website.dll": {
+            "assemblyVersion": "10.8.5.0",
+            "fileVersion": "10.8.5.4"
+          }
+        },
+        "compile": {
+          "lib/net6.0/Umbraco.Web.Website.dll": {}
         }
       },
       "Umbraco.CSharpTest.Net.Collections/14.906.1403.1085": {
@@ -3083,6 +3108,18 @@
       "Microsoft.AspNetCore.Cors/6.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Cors.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Cryptography.Internal.Reference/6.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Cryptography.Internal.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation.Reference/6.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {}
         },
         "compileOnly": true
       },
@@ -3584,6 +3621,12 @@
         },
         "compileOnly": true
       },
+      "Microsoft.Extensions.FileProviders.Embedded.Reference/6.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.FileProviders.Embedded.dll": {}
+        },
+        "compileOnly": true
+      },
       "Microsoft.Extensions.FileProviders.Physical.Reference/6.0.0.0": {
         "compile": {
           "Microsoft.Extensions.FileProviders.Physical.dll": {}
@@ -3611,6 +3654,18 @@
       "Microsoft.Extensions.Http.Reference/6.0.0.0": {
         "compile": {
           "Microsoft.Extensions.Http.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Identity.Core.Reference/6.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Identity.Core.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Identity.Stores.Reference/6.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Identity.Stores.dll": {}
         },
         "compileOnly": true
       },
@@ -5613,12 +5668,12 @@
       "path": "serilog.sinks.map/1.0.2",
       "hashPath": "serilog.sinks.map.1.0.2.nupkg.sha512"
     },
-    "SixLabors.ImageSharp/2.1.6": {
+    "SixLabors.ImageSharp/2.1.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zgCyj3F3U19A/YpmhZAplH5dyh7BTCjLutzbVbHGd7zzPfSMA0Tm+DFqQEb/V52Y8EW1FH5wZ91PaEDSrUaNOw==",
-      "path": "sixlabors.imagesharp/2.1.6",
-      "hashPath": "sixlabors.imagesharp.2.1.6.nupkg.sha512"
+      "sha512": "sha512-CiOV86pE4v1U850lO8zTRXQMysFCo40DJnHwxX8mIJbJ/unr7I9avhHqCh3BvU0sOSDdCp/2LcIz+7zVCWjMZw==",
+      "path": "sixlabors.imagesharp/2.1.7",
+      "hashPath": "sixlabors.imagesharp.2.1.7.nupkg.sha512"
     },
     "SixLabors.ImageSharp.Web/2.0.2": {
       "type": "package",
@@ -6264,40 +6319,54 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "Umbraco.Cms.Core/10.8.4": {
+    "Umbraco.Cms.Core/10.8.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-L3nICc04QjfjskMmbgLzCv01kctKw9NUClEFxWdzl/PEBPN2Nv6tbS5DMTeLl1yre4KQQJeWo40jmdPSvj1pzg==",
-      "path": "umbraco.cms.core/10.8.4",
-      "hashPath": "umbraco.cms.core.10.8.4.nupkg.sha512"
+      "sha512": "sha512-YjZGrk7YZDcAb9lEjSwf68HoUem0p2ObY6SAq/DUNJj6pJXdUGMtfVKxTN5UXvKvlBuPhqqgxt6g5DKzGuelog==",
+      "path": "umbraco.cms.core/10.8.5",
+      "hashPath": "umbraco.cms.core.10.8.5.nupkg.sha512"
     },
-    "Umbraco.Cms.Examine.Lucene/10.8.4": {
+    "Umbraco.Cms.Examine.Lucene/10.8.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PgmfVRFXmBsm/RgQptUIbm2s7/WOrwCtEI/EL6I3UqbtbScV7uCW2g12Z7diftkSyHGRQImgmK06V6KE8lO/Lg==",
-      "path": "umbraco.cms.examine.lucene/10.8.4",
-      "hashPath": "umbraco.cms.examine.lucene.10.8.4.nupkg.sha512"
+      "sha512": "sha512-KySQe7R9jn/d/hfqc9PxdwJaR9ibeAdx3d2gU56uECaSbVOtMfbhSFL4ZLDibNjIBNFKJnfUJ4UOpfo4Z1r4aw==",
+      "path": "umbraco.cms.examine.lucene/10.8.5",
+      "hashPath": "umbraco.cms.examine.lucene.10.8.5.nupkg.sha512"
     },
-    "Umbraco.Cms.Infrastructure/10.8.4": {
+    "Umbraco.Cms.Infrastructure/10.8.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2S3lC1kYnS2+fw7LxvumPbyQNc8XaHvrLwzSxJ7xc3k/NLkf0Ki/g4gWFhglkSaqULIGmB55R4p7KQq3e4ntCg==",
-      "path": "umbraco.cms.infrastructure/10.8.4",
-      "hashPath": "umbraco.cms.infrastructure.10.8.4.nupkg.sha512"
+      "sha512": "sha512-VF0+Vi8dy+eWwJJtPSqxkJ8F8HwdQLKOMf/otYnhgI3tRMZXSKG8KIPsnWLdmY9HIx6pQl6o2hKoPE5L1na2tQ==",
+      "path": "umbraco.cms.infrastructure/10.8.5",
+      "hashPath": "umbraco.cms.infrastructure.10.8.5.nupkg.sha512"
     },
-    "Umbraco.Cms.PublishedCache.NuCache/10.8.4": {
+    "Umbraco.Cms.PublishedCache.NuCache/10.8.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ipVomsYM5wAYYMUiUti8HPqSHEZY0otwaPogv6RAZaT2pIYv7f7/kfAp3JITZ/Zhz9/kp7HxDSmuJSaTZJj+5w==",
-      "path": "umbraco.cms.publishedcache.nucache/10.8.4",
-      "hashPath": "umbraco.cms.publishedcache.nucache.10.8.4.nupkg.sha512"
+      "sha512": "sha512-gpXuKnsapsRp3YP0F4B25itIw5zYSvPUHqVCublT//YFItOl+Rw+glCt1sinsdV74jccS9wn7JNIzpNrDuRtcQ==",
+      "path": "umbraco.cms.publishedcache.nucache/10.8.5",
+      "hashPath": "umbraco.cms.publishedcache.nucache.10.8.5.nupkg.sha512"
     },
-    "Umbraco.Cms.Web.Common/10.8.4": {
+    "Umbraco.Cms.Web.BackOffice/10.8.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qi8W89mfIxrXRhSpARTatVwJytkmC3Md3yoHBdBZ+foGAEiE0moFGBNE8yhpwim2EWc6TeODDUPCnPZ4in/oHw==",
-      "path": "umbraco.cms.web.common/10.8.4",
-      "hashPath": "umbraco.cms.web.common.10.8.4.nupkg.sha512"
+      "sha512": "sha512-s4S6JorLNlBBlPwa41LBiQDPJP3LmYXIWOEWvZ32fReTiGXYaYhMfqazwFncJ9ax6+9p+s2aQCefs3KMcwMoXQ==",
+      "path": "umbraco.cms.web.backoffice/10.8.5",
+      "hashPath": "umbraco.cms.web.backoffice.10.8.5.nupkg.sha512"
+    },
+    "Umbraco.Cms.Web.Common/10.8.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f2aW9xi+KEY328bdll4zPeOkdqWakV9oh95+YlwJW8+ehZfKLoKCO9oQ49wLCoWqB876SSyi97Dnr+sqmARMYw==",
+      "path": "umbraco.cms.web.common/10.8.5",
+      "hashPath": "umbraco.cms.web.common.10.8.5.nupkg.sha512"
+    },
+    "Umbraco.Cms.Web.Website/10.8.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j6F1nxI211FUsKUnv13Kfb5cK42QHl6wxqtUn639MNxSX+ISAaLE8jyAzxaGjWB7D5qh2wALGILYQa8JG2JhPg==",
+      "path": "umbraco.cms.web.website/10.8.5",
+      "hashPath": "umbraco.cms.web.website.10.8.5.nupkg.sha512"
     },
     "Umbraco.CSharpTest.Net.Collections/14.906.1403.1085": {
       "type": "package",
@@ -6382,6 +6451,16 @@
       "sha512": ""
     },
     "Microsoft.AspNetCore.Cors/6.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Cryptography.Internal.Reference/6.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation.Reference/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -6801,6 +6880,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Microsoft.Extensions.FileProviders.Embedded.Reference/6.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Microsoft.Extensions.FileProviders.Physical.Reference/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -6822,6 +6906,16 @@
       "sha512": ""
     },
     "Microsoft.Extensions.Http.Reference/6.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Identity.Core.Reference/6.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Identity.Stores.Reference/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

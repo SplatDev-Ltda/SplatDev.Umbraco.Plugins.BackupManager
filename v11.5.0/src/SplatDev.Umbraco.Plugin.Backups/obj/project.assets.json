@@ -3810,6 +3810,25 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Umbraco.Cms.Web.Website/11.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Umbraco.Cms.Web.Common": "11.5.0"
+        },
+        "compile": {
+          "lib/net7.0/Umbraco.Web.Website.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Umbraco.Web.Website.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Umbraco.CSharpTest.Net.Collections/14.906.1403.1085": {
         "type": "package",
         "compile": {
@@ -10948,6 +10967,20 @@
         "umbraco.cms.web.common.nuspec"
       ]
     },
+    "Umbraco.Cms.Web.Website/11.5.0": {
+      "sha512": "a1Bag7PYgnOsViAvfBFr8QcLdTTgDTfSrpEKWOA/b4QC3kBtaOeWxQIeWR0Uot1h91gS8yEa1g1wmlUmwMC9Aw==",
+      "type": "package",
+      "path": "umbraco.cms.web.website/11.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net7.0/Umbraco.Web.Website.dll",
+        "lib/net7.0/Umbraco.Web.Website.xml",
+        "umbraco.cms.web.website.11.5.0.nupkg.sha512",
+        "umbraco.cms.web.website.nuspec"
+      ]
+    },
     "Umbraco.CSharpTest.Net.Collections/14.906.1403.1085": {
       "sha512": "TgBX1VO1wF/MW56KXGI38QVjlFyLUXru8WbJOBbFecqr/h0kJQBBQnFidty7db4ZtPQgYUfu5twGOge/107teQ==",
       "type": "package",
@@ -10968,7 +11001,8 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "System.Data.SqlClient >= 4.8.6",
-      "Umbraco.Cms.Web.BackOffice >= 11.5.0"
+      "Umbraco.Cms.Web.BackOffice >= 11.5.0",
+      "Umbraco.Cms.Web.Website >= 11.5.0"
     ]
   },
   "packageFolders": {
@@ -10978,13 +11012,13 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "11.5.0",
     "restore": {
-      "projectUniqueName": "D:\\Officials\\BackUpManager\\v11.5.0\\src\\SplatDev.Umbraco.Plugin.Backups\\SplatDev.Umbraco.Plugin.Backups.csproj",
+      "projectUniqueName": "D:\\BackupManger_22\\BackupManafer_22Mar\\v11.5.0\\src\\SplatDev.Umbraco.Plugin.Backups\\SplatDev.Umbraco.Plugin.Backups.csproj",
       "projectName": "SplatDev.Umbraco.Plugin.Backups",
-      "projectPath": "D:\\Officials\\BackUpManager\\v11.5.0\\src\\SplatDev.Umbraco.Plugin.Backups\\SplatDev.Umbraco.Plugin.Backups.csproj",
+      "projectPath": "D:\\BackupManger_22\\BackupManafer_22Mar\\v11.5.0\\src\\SplatDev.Umbraco.Plugin.Backups\\SplatDev.Umbraco.Plugin.Backups.csproj",
       "packagesPath": "C:\\Users\\Ariel-CSSD\\.nuget\\packages\\",
-      "outputPath": "D:\\Officials\\BackUpManager\\v11.5.0\\src\\SplatDev.Umbraco.Plugin.Backups\\obj\\",
+      "outputPath": "D:\\BackupManger_22\\BackupManafer_22Mar\\v11.5.0\\src\\SplatDev.Umbraco.Plugin.Backups\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
@@ -11001,6 +11035,7 @@
         "net7.0"
       ],
       "sources": {
+        "C:\\Packages\\local.nuget": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
@@ -11016,6 +11051,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -11027,6 +11067,10 @@
             "version": "[4.8.6, )"
           },
           "Umbraco.Cms.Web.BackOffice": {
+            "target": "Package",
+            "version": "[11.5.0, )"
+          },
+          "Umbraco.Cms.Web.Website": {
             "target": "Package",
             "version": "[11.5.0, )"
           }
@@ -11047,7 +11091,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
