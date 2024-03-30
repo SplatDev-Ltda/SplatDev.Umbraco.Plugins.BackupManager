@@ -11579,11 +11579,11 @@
   "project": {
     "version": "13.2.0.8",
     "restore": {
-      "projectUniqueName": "D:\\Source\\Repos\\Umbraco-Backup-Manager-Shuchita\\v13.2.0\\src\\SplatDev.Umbraco.Web\\SplatDev.Umbraco.Plugin.Backups\\SplatDev.Umbraco.Plugin.Backups.csproj",
+      "projectUniqueName": "D:\\Source\\Repos\\Umbraco-Backup-Manager-Shuchita\\v13.2.0_v1\\src\\SplatDev.Umbraco.Web\\SplatDev.Umbraco.Plugin.Backups\\SplatDev.Umbraco.Plugin.Backups.csproj",
       "projectName": "SplatDev.Umbraco.Plugin.Backups",
-      "projectPath": "D:\\Source\\Repos\\Umbraco-Backup-Manager-Shuchita\\v13.2.0\\src\\SplatDev.Umbraco.Web\\SplatDev.Umbraco.Plugin.Backups\\SplatDev.Umbraco.Plugin.Backups.csproj",
+      "projectPath": "D:\\Source\\Repos\\Umbraco-Backup-Manager-Shuchita\\v13.2.0_v1\\src\\SplatDev.Umbraco.Web\\SplatDev.Umbraco.Plugin.Backups\\SplatDev.Umbraco.Plugin.Backups.csproj",
       "packagesPath": "C:\\Users\\Carlos Casalicchio\\.nuget\\packages\\",
-      "outputPath": "D:\\Source\\Repos\\Umbraco-Backup-Manager-Shuchita\\v13.2.0\\src\\SplatDev.Umbraco.Web\\SplatDev.Umbraco.Plugin.Backups\\obj\\",
+      "outputPath": "D:\\Source\\Repos\\Umbraco-Backup-Manager-Shuchita\\v13.2.0_v1\\src\\SplatDev.Umbraco.Web\\SplatDev.Umbraco.Plugin.Backups\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

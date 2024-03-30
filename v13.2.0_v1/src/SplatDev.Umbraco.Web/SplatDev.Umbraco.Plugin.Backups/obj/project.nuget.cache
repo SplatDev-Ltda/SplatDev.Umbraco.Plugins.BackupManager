@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "axnLX//tG247mqhnAQK7KuA/CM6EDPZOPohaWmGegO9tLOZDEO32EWvv1RWjcm9blHKoPyCsv5dwqW225xL3NQ==",
+  "dgSpecHash": "t2CdO/rbMDLyb6B+6+nczT48fo1xc/hxpMEsJAHvGSgW93F9QnmqkfiBOpCqterHvMtvTgX+uwkKBnVo8m/aeQ==",
   "success": true,
-  "projectFilePath": "D:\\Source\\Repos\\Umbraco-Backup-Manager-Shuchita\\v13.2.0\\src\\SplatDev.Umbraco.Web\\SplatDev.Umbraco.Plugin.Backups\\SplatDev.Umbraco.Plugin.Backups.csproj",
+  "projectFilePath": "D:\\Source\\Repos\\Umbraco-Backup-Manager-Shuchita\\v13.2.0_v1\\src\\SplatDev.Umbraco.Web\\SplatDev.Umbraco.Plugin.Backups\\SplatDev.Umbraco.Plugin.Backups.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carlos Casalicchio\\.nuget\\packages\\asp.versioning.abstractions\\7.0.0\\asp.versioning.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Carlos Casalicchio\\.nuget\\packages\\asp.versioning.http\\7.1.0\\asp.versioning.http.7.1.0.nupkg.sha512",
