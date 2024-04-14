@@ -46,3 +46,7 @@
 /v13.2.0_v1/src/SplatDev.Umbraco.Web/SplatDev.Umbraco.Plugin.Backups/obj/Release/net8.0/SplatDev.Umbraco.Plugin.Backups.AssemblyInfoInputs.cache
 /v13.2.0_v1/src/SplatDev.Umbraco.Web/SplatDev.Umbraco.Plugin.Backups/obj/Release/net8.0/SplatDev.Umbraco.Plugin.Backups.assets.cache
 /v13.2.0_v1/src/SplatDev.Umbraco.Web/SplatDev.Umbraco.Plugin.Backups/obj/Release/net8.0/SplatDev.Umbraco.Plugin.Backups.GeneratedMSBuildEditorConfig.editorconfig
+/v13.2.0/src/PrismDrive.Tests/bin/Debug/net8.0
+/v13.2.0/src/PrismDrive.Tests/obj
+/v13.2.0/src/SplatDev.Plugins.BackupVault/bin/Debug/net8.0
+/v13.2.0/src/SplatDev.Plugins.BackupVault/obj
