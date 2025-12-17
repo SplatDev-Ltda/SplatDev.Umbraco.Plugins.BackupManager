@@ -50,3 +50,6 @@
 /v13.2.0/src/PrismDrive.Tests/obj
 /v13.2.0/src/SplatDev.Plugins.BackupVault/bin/Debug/net8.0
 /v13.2.0/src/SplatDev.Plugins.BackupVault/obj
+/v13.12.1/.vs/SplatDev.uPlugins.Backups
+/v13.12.1/PrismDrive.Tests/bin/Debug/net8.0
+/v13.12.1/PrismDrive.Tests/obj
