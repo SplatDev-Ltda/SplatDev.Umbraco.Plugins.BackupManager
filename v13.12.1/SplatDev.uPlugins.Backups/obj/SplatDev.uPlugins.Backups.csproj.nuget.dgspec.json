@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Source\\Repos\\Umbraco 13 Projects\\SplatDev.uPlugins.Backups\\SplatDev.uPlugins.Backups\\SplatDev.uPlugins.Backups.csproj": {}
+    "E:\\Source\\Repos\\Umbraco 13 Projects\\SplatDev.Umbraco.Plugins.BackupManager\\v13.12.1\\SplatDev.uPlugins.Backups\\SplatDev.uPlugins.Backups.csproj": {}
   },
   "projects": {
-    "E:\\Source\\Repos\\Umbraco 13 Projects\\SplatDev.uPlugins.Backups\\SplatDev.uPlugins.Backups\\SplatDev.uPlugins.Backups.csproj": {
+    "E:\\Source\\Repos\\Umbraco 13 Projects\\SplatDev.Umbraco.Plugins.BackupManager\\v13.12.1\\SplatDev.uPlugins.Backups\\SplatDev.uPlugins.Backups.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Source\\Repos\\Umbraco 13 Projects\\SplatDev.uPlugins.Backups\\SplatDev.uPlugins.Backups\\SplatDev.uPlugins.Backups.csproj",
+        "projectUniqueName": "E:\\Source\\Repos\\Umbraco 13 Projects\\SplatDev.Umbraco.Plugins.BackupManager\\v13.12.1\\SplatDev.uPlugins.Backups\\SplatDev.uPlugins.Backups.csproj",
         "projectName": "SplatDev.uPlugins.Backups",
-        "projectPath": "E:\\Source\\Repos\\Umbraco 13 Projects\\SplatDev.uPlugins.Backups\\SplatDev.uPlugins.Backups\\SplatDev.uPlugins.Backups.csproj",
+        "projectPath": "E:\\Source\\Repos\\Umbraco 13 Projects\\SplatDev.Umbraco.Plugins.BackupManager\\v13.12.1\\SplatDev.uPlugins.Backups\\SplatDev.uPlugins.Backups.csproj",
         "packagesPath": "C:\\Users\\elder\\.nuget\\packages\\",
-        "outputPath": "E:\\Source\\Repos\\Umbraco 13 Projects\\SplatDev.uPlugins.Backups\\SplatDev.uPlugins.Backups\\obj\\",
+        "outputPath": "E:\\Source\\Repos\\Umbraco 13 Projects\\SplatDev.Umbraco.Plugins.BackupManager\\v13.12.1\\SplatDev.uPlugins.Backups\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            },
             "Umbraco.Cms.Web.BackOffice": {
               "target": "Package",
               "version": "[13.12.1, )"

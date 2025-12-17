@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("...")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c45fdf31294cf374ecfd4c8dfbcf83e4f6381fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("SplatDev.uPlugins.Backups")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SplatDev.uPlugins.Backups")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
