@@ -44,6 +44,18 @@ namespace SplatDev.Plugins.BackupVault.Services
             };
         }
 
+        public static async Task<RestResponse> GetFiles()
+        {
+            var options = new RestClientOptions(BASE_URL)
+            {
+                Timeout = new TimeSpan(0, 6, 0),
+            };
+            var client = new RestClient(options);
+            var request = new RestRequest("file-entries", Method.Get);
+            RestResponse response = await client.ExecuteAsync(request);
+            return response;
+        }
+
         public static async Task<RestResponse?> UploadAsync(IFormFile file, string token, string clientName = "browser", string? parentId = null, string relativePath = "/")
         {
             if (file.Length == 0) return new RestResponse { ErrorMessage = MISSING_FILE };
