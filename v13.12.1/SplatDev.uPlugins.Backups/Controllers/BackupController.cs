@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using SplatDev.uPlugins.Backups.Extensions;
 using SplatDev.uPlugins.Backups.Models;
 
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.IO.Compression;
 using System.Net;
 
