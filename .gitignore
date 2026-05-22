@@ -21,4 +21,5 @@
 /**/obj/*.csproj.nuget.g.targets
 /**/node_modules/
 #!/**/obj/project.assets.json
-*.zip
+*.zipApp_Plugins/
+client/
